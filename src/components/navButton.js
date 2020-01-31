@@ -1,11 +1,13 @@
 import React from 'react';
 
+import navButtonStyles from '../styles/navButton.module.scss'
+
 const navButton = () => {
     return (
         <div>
-            <buttton>+</buttton>
+            <buttton className={navButtonStyles.buttton}>+</buttton>
         </div>
     )
 }
 
-export default navButton;
+export default navButton
