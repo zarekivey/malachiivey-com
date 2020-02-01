@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import headerStyles from '../styles/header.module.scss'
+import NavButton from '../components/navButton'
 
 const Header = () => {
     return (
@@ -22,6 +23,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <NavButton />
         </header>
     )
 }
