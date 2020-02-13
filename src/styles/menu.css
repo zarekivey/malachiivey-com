@@ -1,0 +1,89 @@
+#flyoutMenu {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  #flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+  }
+  
+  #flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+  }
+  
+  .box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  ul {
+    margin-top: 3rem;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 40px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #1F1F1F;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #1F1F1F;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .closeNav {
+    margin-top: -15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 100px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 500px) {
+    li {
+      font-size: 30px;
+    }
+  
+    .closeNav {
+      font-size: 90px;
+    }
+  }

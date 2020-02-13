@@ -28,3 +28,24 @@
 .active-nav-item {
     color: black;
 }
+
+.logoLink {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #1F1F1F;
+    text-decoration: none;
+    font-size: 70px;
+  }
+  
+  #theMenu {
+    position: fixed;
+      left: 0;
+      top: 0;
+      transform: translate3d(-100vw, 0, 0);
+  
+      width: 100vw;
+      height: 100vh;
+  }
