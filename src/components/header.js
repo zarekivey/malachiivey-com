@@ -32,7 +32,7 @@ class Header extends Component {
         return (
             <div className="navigation-bar-container">
                 <NavMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
-                <Link className={headerStyles.title}to="/">M</Link>
+                <Link className={headerStyles.logoLink} to="/">M</Link>
                 <NavButton handleMouseDown={this.handleMouseDown} />
                 <div id="theMenu"></div>
             </div>
