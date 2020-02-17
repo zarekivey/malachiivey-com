@@ -3,15 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
+import footerStyles from '../styles/footer.module.scss'
+
 const Footer = () => {
     return (
         <footer>
-            <div>
-                <a href="https://www.linkedin.com/in/malachiivey/"><FontAwesomeIcon icon = { faLinkedin }></FontAwesomeIcon></a>
-                <a href="https://www.linkedin.com/in/malachiivey/"><FontAwesomeIcon icon = { faGithub }></FontAwesomeIcon></a>
-                <a href="https://www.linkedin.com/in/malachiivey/"><FontAwesomeIcon icon = { faEnvelopeSquare }></FontAwesomeIcon></a>
+            <div className = {footerStyles.contactInfo}>
+                <a href="https://www.linkedin.com/in/malachiivey/" target="_blank"><FontAwesomeIcon icon = { faLinkedin } className = { footerStyles.icons }></FontAwesomeIcon></a>
+                <a href="https://github.com/zarekivey" target="_blank"><FontAwesomeIcon icon = { faGithub } className = { footerStyles.icons }></FontAwesomeIcon></a>
+                <a href="mailto:iveyweb@gmail.com" target="_blank"><FontAwesomeIcon icon = { faEnvelopeSquare } className = { footerStyles.icons }></FontAwesomeIcon></a>
             </div>
-            <p>Created by Malachi Ivey</p>
+            <p className = { footerStyles.createdBy }>Created by Malachi Ivey</p>
         </footer>
     )
 }
