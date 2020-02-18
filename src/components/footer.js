@@ -11,7 +11,7 @@ const Footer = () => {
             <div className = {footerStyles.contactInfo}>
                 <a href="https://www.linkedin.com/in/malachiivey/" target="_blank"><FontAwesomeIcon icon = { faLinkedin } className = { footerStyles.icons }></FontAwesomeIcon></a>
                 <a href="https://github.com/zarekivey" target="_blank"><FontAwesomeIcon icon = { faGithub } className = { footerStyles.icons }></FontAwesomeIcon></a>
-                <a href="mailto:iveyweb@gmail.com" target="_blank"><FontAwesomeIcon icon = { faEnvelopeSquare } className = { footerStyles.icons }></FontAwesomeIcon></a>
+                <a href="mailto:iveyweb@gmail.com"><FontAwesomeIcon icon = { faEnvelopeSquare } className = { footerStyles.icons }></FontAwesomeIcon></a>
             </div>
             <p className = { footerStyles.createdBy }>Created by Malachi Ivey</p>
         </footer>
