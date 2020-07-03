@@ -1,39 +1,71 @@
 .index-container {
-    overflow-x: scroll;
-    width: 100%;
+  overflow-x: scroll;
+  width: 100%;
 }
 
 .title {
-    font-size: 2.5vw;
-    font-weight: 600;
-    margin-top: 25%;
-    margin-bottom: -5px;
-    margin-left: 10%;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 25%;
+  margin-bottom: -5px;
+  text-align: center;
+}
+
+.posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.post {
+  margin: 1em 0;
+
+  a {
+    background: #f4f4f4;
+    color: #000000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #e4e4e4;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  p {
+    color: #777777;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
 }
 
 @media (max-width: 800px) and (min-width: 601px) {
-    .title {
-        font-size: 26px;
-    }
+  .title {
+    font-size: 26px;
+  }
 }
-  
+
 @media (max-width: 1000px) and (min-width: 800px) {
-    .title {
-        padding-left: 40px;
-    }
+  .title {
+    padding-left: 40px;
+  }
 }
-  
+
 @media (max-width: 1200px) and (min-width: 1000px) {
-    .title {
-        font-size: 23px;
-        padding-left: 10px;
-    }
+  .title {
+    font-size: 23px;
+    padding-left: 10px;
+  }
 }
-  
+
 @media (max-width: 600px) {
-    .title {
-        font-size: 22px;
-        margin-top: 50%;
-        margin-bottom: 5px;
-    }
+  .title {
+    font-size: 22px;
+    margin-top: 50%;
+    margin-bottom: 5px;
+  }
 }

@@ -6,37 +6,6 @@ import indexStyles from "../styles/landing.module.scss"
 import { useStaticQuery } from "gatsby"
 
 const IndexPage = () => {
-  // const data = useStaticQuery(`graphql
-  // query {
-  //     github {
-  //       viewer {
-  //         repositories(
-  //           first: 6
-  //           isFork: false
-  //           privacy: PUBLIC
-  //           orderBy: { field: STARGAZERS, direction: DESC }
-  //         ) {
-  //           edges {
-  //             node {
-  //               id
-  //               name
-  //               url
-  //               description
-  //               forkCount
-  //               stargazers {
-  //                 totalCount
-  //               }
-  //               primaryLanguage {
-  //                 name
-  //                 color
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <Layout>
       <div className="index-container">
