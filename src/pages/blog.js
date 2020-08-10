@@ -24,7 +24,11 @@ const BlogPage = () => {
       <h2 className={blogStyles.subtitle}>
         This is where I explore topics that I find interesting or rant-worthy.
         There's also a place where I make bad jokes. That is my Twitter (
-        <a href="https://twitter.com/deimosmustdie" target="_blank">
+        <a
+          className={blogStyles.twitter}
+          href="https://twitter.com/deimosmustdie"
+          target="_blank"
+        >
           @deimosmustdie
         </a>
         ).
