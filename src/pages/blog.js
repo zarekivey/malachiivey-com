@@ -21,6 +21,11 @@ const BlogPage = () => {
   return (
     <Layout>
       <h1 className={blogStyles.title}>Welcome to my blog!</h1>
+      <h2 className={blogStyles.subtitle}>
+        This is where I explore topics that I find interesting or rant-worthy.
+        There's also a place where I make bad jokes. That is my Twitter
+        (@deimosmustdie).
+      </h2>
       <ol className={blogStyles.posts}>
         {data.allContentfulBlogPost.edges.map(edge => {
           return (
