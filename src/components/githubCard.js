@@ -1,6 +1,9 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+import githubCardStyles from "../styles/githubcard.module.scss"
+import { ExternalLink } from "react-external-link"
+
 const GithubCard = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -34,17 +37,22 @@ const GithubCard = () => {
   `)
   return (
     <div>
-      <ol>
+      <ol className={githubCardStyles.list}>
         {data.github.viewer.repositories.edges.map(edge => {
           return (
-            <li>
-              <h1>{edge.node.name}</h1>
-              <p>{edge.node.description}</p>
-              <p>{edge.node.stargazers.totalcount}</p>
-              <p>
-                {edge.node.primaryLanguage && edge.node.primaryLanguage.name}
-              </p>
-            </li>
+            <ExternalLink
+              href={edge.node.url}
+              className={githubCardStyles.list}
+            >
+              <li className={githubCardStyles.list}>
+                <h1>{edge.node.name}</h1>
+                <p>{edge.node.description}</p>
+                <p>{edge.node.stargazers.totalcount}</p>
+                <p>
+                  {edge.node.primaryLanguage && edge.node.primaryLanguage.name}
+                </p>
+              </li>
+            </ExternalLink>
           )
         })}
       </ol>
