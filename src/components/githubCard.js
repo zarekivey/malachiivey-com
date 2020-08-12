@@ -1,9 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import GithubCard from "./githubCard"
-
-const GithubBlock = () => {
+const GithubCard = () => {
   const data = useStaticQuery(graphql`
     query {
       github {
@@ -36,10 +34,22 @@ const GithubBlock = () => {
   `)
   return (
     <div>
-      <h1>This is the github block.</h1>
-      <GithubCard />
+      <ol>
+        {data.github.viewer.repositories.edges.map(edge => {
+          return (
+            <li>
+              <h1>{edge.node.name}</h1>
+              <p>{edge.node.description}</p>
+              <p>{edge.node.stargazers.totalcount}</p>
+              <p>
+                {edge.node.primaryLanguage && edge.node.primaryLanguage.name}
+              </p>
+            </li>
+          )
+        })}
+      </ol>
     </div>
   )
 }
 
-export default GithubBlock
+export default GithubCard
