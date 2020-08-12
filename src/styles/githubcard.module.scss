@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xs);
+  min-height: 180px;
+  border-radius: 3px;
+  transition: box-shadow 300ms ease-in-out;
+  border: 1px solid rgba(20, 20, 20, 0.03);
+  box-shadow: 0 6px 13px 0 rgba(20, 20, 20, 0.05);
+  &:hover {
+    box-shadow: 0 12px 26px 0 rgba(20, 20, 20, 0.09);
+  }
+  p {
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.repo {
+  background-color: green($color: #000000);
+  p {
+    color: #777777;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  h1 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  a {
+    background: #f4f4f4;
+    color: #000000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+}
