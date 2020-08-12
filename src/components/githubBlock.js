@@ -6,11 +6,25 @@ const GithubBlock = () => {
     query {
       github {
         viewer {
-          repositories(first: 4, isFork: false, privacy: PUBLIC) {
+          repositories(
+            first: 4
+            isFork: false
+            privacy: PUBLIC
+            orderBy: { field: STARGAZERS, direction: DESC }
+          ) {
             edges {
               node {
                 id
                 name
+                description
+                url
+                stargazers {
+                  totalCount
+                }
+                primaryLanguage {
+                  name
+                  color
+                }
               }
             }
           }
