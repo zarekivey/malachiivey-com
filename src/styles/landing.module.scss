@@ -1,66 +1,56 @@
 .index-container {
-    overflow-x: scroll;
-    width: 100%;
+  overflow-x: scroll;
+  width: 100%;
 }
 
 .hello {
-    font-size: 2.5vw;
-    font-weight: 600;
-    margin-top: 25%;
-    margin-bottom: -5px;
-    margin-left: 10%;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 20%;
+  margin-bottom: -5px;
+  text-align: center;
 }
 
-.info { 
-    font-size: 1.5rem;
-    font-weight: 300;
-    width: 45%;
-    margin-left: 10%;
+.info {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media (max-width: 800px) and (min-width: 601px) {
-    .info {
-      font-size: 22px;
-      width: 70%;
-    }
-  
-    .hello {
-      font-size: 26px;
-    }
+  .info {
+    font-size: 22px;
+  }
+
+  .hello {
+    font-size: 26px;
+  }
 }
-  
+
 @media (max-width: 1000px) and (min-width: 800px) {
-    .hello {
-      padding-left: 40px;
-    }
-  
-    .info {
-      padding-left: 40px;
-      font-size: 20px;
-    }
+  .info {
+    font-size: 20px;
+  }
 }
-  
+
 @media (max-width: 1200px) and (min-width: 1000px) {
-    .info {
-      font-size: 18px;
-      padding-left: 10px;
-    }
-  
-    .hello {
-      font-size: 23px;
-      padding-left: 10px;
-    }
+  .info {
+    font-size: 18px;
+  }
+
+  .hello {
+    font-size: 23px;
+  }
 }
-  
+
 @media (max-width: 600px) {
-    .info {
-      font-size: 14px;
-      width: 70%;
-    }
-  
-    .hello {
-      font-size: 22px;
-      margin-top: 50%;
-      margin-bottom: 5px;
-    }
+  .info {
+    font-size: 14px;
+  }
+
+  .hello {
+    font-size: 22px;
+    margin-top: 50%;
+    margin-bottom: 5px;
+  }
 }
