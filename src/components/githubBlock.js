@@ -8,7 +8,10 @@ const GithubBlock = () => {
     <div className="index-container">
       <h1 className={githubBlockStyles.title}>What am I working on?</h1>
       <h2 className={githubBlockStyles.info}>
-        Checkout some of my github repositories.
+        I'm currentlly contribuing to local companies through freelance work, as
+        well as contributing to open-source software. Want to work with me on a
+        project? Get in touch! *insert link to contact block* Also, check out
+        some of my github repositories:
       </h2>
       <GithubCard />
     </div>
