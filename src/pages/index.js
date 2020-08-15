@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import GithubBlock from "../components/githubBlock"
+import Contact from "../components/contact"
 import indexStyles from "../styles/landing.module.scss"
-import { useStaticQuery } from "gatsby"
 
 const IndexPage = () => {
   return (
@@ -16,6 +16,7 @@ const IndexPage = () => {
         </h2>
       </div>
       <GithubBlock />
+      <Contact />
     </Layout>
   )
 }
