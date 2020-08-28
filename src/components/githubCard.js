@@ -36,13 +36,16 @@ const GithubCard = () => {
     }
   `)
   return (
-    <div>
-      <ol className={githubCardStyles.list}>
+    <div className={githubCardStyles.repositories}>
+      <ul>
         {data.github.viewer.repositories.edges.map(edge => {
           return (
-            <li className={githubCardStyles.repo}>
-              <ExternalLink href={edge.node.url}>
-                <h1>{edge.node.name}</h1>
+            <li>
+              <ExternalLink
+                href={edge.node.url}
+                className={githubCardStyles.repositories}
+              >
+                <h1 className={githubCardStyles.repotitle}>{edge.node.name}</h1>
                 <p>{edge.node.description}</p>
                 <p>{edge.node.stargazers.totalcount}</p>
                 <p>
@@ -52,7 +55,7 @@ const GithubCard = () => {
             </li>
           )
         })}
-      </ol>
+      </ul>
     </div>
   )
 }
