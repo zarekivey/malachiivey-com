@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import navButtonStyles from '../styles/navButton.module.scss'
+import navButtonStyles from '../styles/components/navButton.module.scss'
 
 class navButton extends Component {
     render() {

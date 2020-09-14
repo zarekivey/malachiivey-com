@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import aboutStyles from '../styles/about.module.scss'
+import aboutStyles from '../styles/pages/about.module.scss'
 
 const AboutPage = () => {
     return (

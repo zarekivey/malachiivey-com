@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby'
-import '../styles/menu.css'
+import '../styles/components/menu.css'
 
 class navMenu extends Component {
     render() {

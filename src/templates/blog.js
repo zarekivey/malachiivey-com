@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import blogStyles from "../styles/blog.module.scss"
+import blogStyles from "../styles/pages/blog.module.scss"
 
 import Layout from "../components/layout"
 

@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import GithubBlock from "../components/githubBlock"
 import Contact from "../components/contact"
-import indexStyles from "../styles/landing.module.scss"
+import indexStyles from "../styles/pages/landing.module.scss"
 
 const IndexPage = () => {
   return (

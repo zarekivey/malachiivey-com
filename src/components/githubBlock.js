@@ -1,7 +1,7 @@
 import React from "react"
 
 import GithubCard from "./githubCard"
-import githubBlockStyles from "../styles/githubblock.module.scss"
+import githubBlockStyles from "../styles/components/githubblock.module.scss"
 
 const GithubBlock = () => {
   return (

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 
-import footerStyles from "../styles/footer.module.scss"
+import footerStyles from "../styles/components/footer.module.scss"
 
 const Footer = () => {
   return (

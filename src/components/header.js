@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 
-import headerStyles from "../styles/header.module.scss"
+import headerStyles from "../styles/components/header.module.scss"
 
 import NavButton from "../components/navButton"
 import NavMenu from "../components/navMenu"

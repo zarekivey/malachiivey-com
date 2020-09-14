@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import githubCardStyles from "../styles/githubcard.module.scss"
+import githubCardStyles from "../styles/components/githubcard.module.scss"
 import { ExternalLink } from "react-external-link"
 
 const GithubCard = () => {
