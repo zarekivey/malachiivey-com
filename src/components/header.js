@@ -36,7 +36,7 @@ class Header extends Component {
           menuVisibility={this.state.visible}
         />
         <Link className={headerStyles.logoLink} to="/">
-          M
+          mi
         </Link>
         <NavButton handleMouseDown={this.handleMouseDown} />
         <div id="theMenu"></div>

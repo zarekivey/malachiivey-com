@@ -1,3 +1,4 @@
+@import "../utilities/settings";
 .header {
   padding: 1rem 0 3rem;
 }
@@ -14,25 +15,16 @@
 }
 
 .nav-item {
-  color: #454f57;
   font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
-}
-
-.nav-item:hover {
-  color: #454f57;
-}
-
-.active-nav-item {
-  color: #454f57;
 }
 
 .logoLink {
   position: absolute;
   left: 5%;
   top: 5%;
-  font-size: 3.3rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   font-size: 70px;
