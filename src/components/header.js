@@ -3,42 +3,16 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
 
-import NavButton from "../components/navButton"
-import NavMenu from "../components/navMenu"
-
 class Header extends Component {
-  constructor(props, context) {
-    super(props, context)
-
-    this.state = {
-      visible: false,
-    }
-
-    this.handleMouseDown = this.handleMouseDown.bind(this)
-    this.toggleMenu = this.toggleMenu.bind(this)
-  }
-
-  toggleMenu() {
-    this.setState({
-      visible: !this.state.visible,
-    })
-  }
-
-  handleMouseDown(e) {
-    this.toggleMenu()
-  }
 
   render() {
     return (
       <div className="navigation-bar-container">
-        <NavMenu
-          handleMouseDown={this.handleMouseDown}
-          menuVisibility={this.state.visible}
-        />
-        <Link className={headerStyles.logoLink} to="/">
-          mi
-        </Link>
-        <NavButton handleMouseDown={this.handleMouseDown} />
+        <ul>
+          <li><Link className={headerStyles.logoLink} to="/">
+          home</Link></li>
+          <li><Link className={headerStyles.blogLink} to="/blog">blog</Link></li>
+        </ul>
         <div id="theMenu"></div>
       </div>
     )

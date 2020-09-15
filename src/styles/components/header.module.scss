@@ -1,6 +1,7 @@
 @import "../utilities/settings";
 .header {
   padding: 1rem 0 3rem;
+  position: fixed;
 }
 
 .title {
@@ -20,14 +21,18 @@
   text-decoration: none;
 }
 
-.logoLink {
-  position: absolute;
-  left: 5%;
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
   top: 5%;
-  font-size: 1rem;
+  font-size: 3.3rem;
   font-weight: 600;
   text-decoration: none;
-  font-size: 70px;
 }
 
 #theMenu {
