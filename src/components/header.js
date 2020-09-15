@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import headerStyles from "../styles/components/header.module.scss"
 
@@ -9,9 +9,9 @@ class Header extends Component {
     return (
       <div className="navigation-bar-container">
         <ul>
-          <li><Link className={headerStyles.logoLink} to="/">
-          home</Link></li>
-          <li><Link className={headerStyles.blogLink} to="/blog">blog</Link></li>
+          <li><AniLink className={headerStyles.logoLink} swipe to="/" duration={1} entryOffset={100}>
+          home</AniLink></li>
+          <li><AniLink className={headerStyles.blogLink} swipe direction="left" to="/blog" duration={1} entryOffset={100}>blog</AniLink></li>
         </ul>
         <div id="theMenu"></div>
       </div>
