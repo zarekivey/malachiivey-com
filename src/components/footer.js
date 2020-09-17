@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <footer>
       <div className={footerStyles.contactInfo}>
-        <a href="https://www.linkedin.com/in/malachiivey/" target="_blank">
+        <a href="https://www.linkedin.com/in/malachiivey/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faLinkedin}
             className={footerStyles.icons}
           ></FontAwesomeIcon>
         </a>
-        <a href="https://github.com/zarekivey" target="_blank">
+        <a href="https://github.com/zarekivey" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faGithub}
             className={footerStyles.icons}

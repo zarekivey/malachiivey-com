@@ -28,6 +28,7 @@ const BlogPage = () => {
           className={blogStyles.twitter}
           href="https://twitter.com/deimosmustdie"
           target="_blank"
+          rel="noopener noreferrer"
         >
           @deimosmustdie
         </a>

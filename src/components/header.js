@@ -9,9 +9,9 @@ class Header extends Component {
     return (
       <div className="navigation-bar-container">
         <ul>
-          <li><AniLink className={headerStyles.logoLink} swipe to="/" duration={1} entryOffset={100}>
+          <li><AniLink className={headerStyles.logoLink} swipe to="/" duration={.5} entryOffset={100}>
           home</AniLink></li>
-          <li><AniLink className={headerStyles.blogLink} swipe direction="left" to="/blog" duration={1} entryOffset={100}>blog</AniLink></li>
+          <li><AniLink className={headerStyles.blogLink} swipe direction="left" to="/blog" duration={.5} entryOffset={100}>blog</AniLink></li>
         </ul>
         <div id="theMenu"></div>
       </div>
