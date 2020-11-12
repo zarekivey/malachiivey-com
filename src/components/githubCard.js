@@ -10,7 +10,7 @@ const GithubCard = () => {
       github {
         viewer {
           repositories(
-            first: 4
+            first: 2
             isFork: false
             privacy: PUBLIC
             orderBy: { field: STARGAZERS, direction: DESC }
@@ -45,9 +45,7 @@ const GithubCard = () => {
                 href={edge.node.url}
                 className={githubCardStyles.repositories}
               >
-                <h1 className={githubCardStyles.repotitle}>{edge.node.name}</h1>
-                <p>{edge.node.description}</p>
-                <p>{edge.node.stargazers.totalcount}</p>
+                <h1>{edge.node.name}</h1>
                 <p>
                   {edge.node.primaryLanguage && edge.node.primaryLanguage.name}
                 </p>

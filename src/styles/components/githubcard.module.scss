@@ -8,15 +8,20 @@
   li {
     display: inline-block;
     vertical-align: top;
-    width: 25%;
+    width: 50%;
   }
+
   p {
-    font-size: 0.8rem;
+    font-size: 18px;
     font-weight: 300;
+    font-style: italic;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 22px;
+    max-width: 100%;
+    font-style: italic;
   }
 }
 
-.repotitle {
-  font-weight: 600;
-  font-size: 1.5rem;
-}

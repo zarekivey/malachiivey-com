@@ -17,3 +17,9 @@
   margin-bottom: 40px;
   font-weight: 600;
 }
+
+@media (max-width: 600px) {
+  .contactInfo {
+    margin-top: 25%;
+  }
+}
